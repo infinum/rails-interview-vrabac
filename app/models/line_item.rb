@@ -22,4 +22,12 @@
 class LineItem < ApplicationRecord
   belongs_to :order
   belongs_to :product
+
+  def price_cents
+    # @problem
+    # using product instance variable
+    # @solution
+    # change to a method call
+    @product.unit_price_cents * quantity
+  end
 end
