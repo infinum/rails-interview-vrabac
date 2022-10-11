@@ -1,0 +1,13 @@
+---
+feature-branch: feature/delete-product
+pull-request:
+  title: "Ticket #123 - Product soft delete"
+  body: >
+    # Aim
+    Add support for deleting products
+
+    ## Solution
+
+    - first step
+
+    - second step
