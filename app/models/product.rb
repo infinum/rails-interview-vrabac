@@ -14,13 +14,5 @@
 #  index_products_on_code  (code) UNIQUE
 #
 class Product < ApplicationRecord
-  # @problem
-  # wrong association type
-  # @solution
-  # change to has_many
-  # @problem
-  # dependent option is missing
-  # @solution
-  # specify dependent option (:destroy)
   has_one :line_items
 end
