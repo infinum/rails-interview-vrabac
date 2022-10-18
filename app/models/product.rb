@@ -14,4 +14,5 @@
 #  index_products_on_code  (code) UNIQUE
 #
 class Product < ApplicationRecord
+  has_one :line_items
 end

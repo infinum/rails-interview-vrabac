@@ -22,4 +22,8 @@
 class LineItem < ApplicationRecord
   belongs_to :order
   belongs_to :product
+
+  def price_cents
+    @product.unit_price_cents * quantity
+  end
 end
